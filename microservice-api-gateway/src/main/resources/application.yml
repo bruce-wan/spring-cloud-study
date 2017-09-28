@@ -4,6 +4,8 @@ spring:
 
 server:
   port: 8050
+  tomcat:
+    uri-encoding: UTF-8
 
 ## 配置eurka
 eureka:
@@ -23,3 +25,6 @@ zuul:
     user:
       path: /user/**
       service-id: microservice-provider-user
+    file:
+      path: /upload
+      service-id: microservice-file-upload

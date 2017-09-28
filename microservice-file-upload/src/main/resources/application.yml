@@ -1,0 +1,19 @@
+server:
+  port: 8040
+  tomcat:
+    uri-encoding: UTF-8
+
+spring:
+  application:
+    name: microservice-file-upload    # 项目名称尽量用小写
+  http:
+    multipart:
+      max-file-size: 2000Mb
+      max-request-size: 2500Mb
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://discovery:8761/eureka/    # 指定注册中心的地址
+  instance:
+    preferIpAddress: true

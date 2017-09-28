@@ -21,6 +21,7 @@
         <module>microservice-config-server</module>
         <module>microservice-config-client</module>
         <module>microservice-api-gateway</module>
+        <module>microservice-file-upload</module>
     </modules>
 
     <parent>
