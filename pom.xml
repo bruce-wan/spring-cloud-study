@@ -22,6 +22,7 @@
         <module>microservice-config-client</module>
         <module>microservice-api-gateway</module>
         <module>microservice-file-upload</module>
+        <module>microservice-config-server-encryption</module>
     </modules>
 
     <parent>
@@ -39,7 +40,7 @@
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
-                <version>Dalston.SR3</version>
+                <version>Camden.SR7</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>

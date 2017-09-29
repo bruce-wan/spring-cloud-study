@@ -13,9 +13,11 @@ import org.springframework.web.bind.annotation.RestController;
 public class ConfigClientController {
     @Value("${profile}")
     private String profile;
+    @Value("${spring.datasource.password}")
+    private String password;
 
     @GetMapping("/hello")
     public String hello() {
-        return this.profile;
+        return this.password;
     }
 }

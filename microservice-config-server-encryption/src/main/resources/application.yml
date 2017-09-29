@@ -1,0 +1,17 @@
+server:
+  port: 8040
+
+encrypt:
+  key: foo
+
+spring:
+  application:
+    name: microservice-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/bruce-wan/spring-cloud-study/ # 配置git仓库的地址
+          search-paths: microservice-config-repo  #git仓库地址下的相对地址，可以配置多个，⽤,分割。
+          username:
+          password:
